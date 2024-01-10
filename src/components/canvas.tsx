@@ -109,6 +109,10 @@ const CanvasComponent = () => {
   useEffect(() => {
     intervalRef.current = setInterval(onDrawLine, speed.repeat);
 
+    window.addEventListener("beforeunload", () =>
+      clearInterval(intervalRef.current)
+    );
+
     return () => clearInterval(intervalRef.current);
   }, []);
 

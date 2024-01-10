@@ -1,0 +1,24 @@
+#wrapper {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.result {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+
+#wheelOfFortune {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+#wheel {
+  display: block;
+}
